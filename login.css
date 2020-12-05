@@ -1,0 +1,212 @@
+::-webkit-scrollbar{
+display: none;
+}
+
+.fade-in {
+	z-index: 1;
+position: relative;
+animation: fadeIn ease 5s;
+-webkit-animation: fadeIn ease 5s;
+-moz-animation: fadeIn ease 5s;
+-o-animation: fadeIn ease 5s;
+-ms-animation: fadeIn ease 5s;
+
+}
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+
+
+.body{
+		overflow-x: hidden;
+         	overflow-y: hidden;
+}
+
+.wrapper {position: relative; z-index: -1;}
+
+.homearrow {
+            background: #fff url('login_bg.jpg') no-repeat center;
+            overflow: hidden;
+         	background-size: cover;
+            position: center;
+            -webkit-animation: fadein 4s; /* Safari and Chrome */
+            -moz-animation: fadein 4s; /* Firefox */
+            -ms-animation: fadein 4s; /* Internet Explorer */
+            -o-animation: fadein 4s; /* Opera */
+            animation: fadein 4s;
+
+            height: 940px;
+            width: 250vh;
+            position: absolute;
+        }
+
+        .homearrowtext {position: absolute; }
+
+
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Firefox */
+        @-moz-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Safari and Chrome */
+        @-webkit-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Internet Explorer */
+        @-ms-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }​
+
+        /* Opera */
+        @-o-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+     }
+
+     *{
+     	margin: 0;
+     	padding: 0;
+     	}​
+
+.login-div {
+  width:430px;
+  height: 700px;
+  padding: 60px 35px 35px 35px;
+  border-radius: 40px;
+  background: #ecf0f3;
+  box-shadow: 13px 13px 20px #cbced1,
+              -13px -13px 20px #ffffff;
+}
+
+.logo {
+  background:url("utm_login_logo.jpg")center;
+  position: relative;
+  top: 30px;
+  width:200px;
+  height: 200px;
+  border-radius: 50%;
+  margin:0 auto;
+  bottom: 500px;
+  box-shadow:
+  /* logo shadow */
+  0px 0px 2px #5f5f5f,
+  /* offset */
+  0px 0px 0px 5px #ecf0f3,
+  /*bottom right */
+  8px 8px 15px #a7aaaf,
+  /* top left */
+  -8px -8px 15px #ffffff
+  ;
+}
+
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  padding-top: 44px;
+  letter-spacing: 0.5px;
+}
+.sub-title {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 7px;
+  letter-spacing: 3px;
+}
+
+.fields {
+  width: 50%;
+  padding: 50px 5px 5px 500px;
+}
+.fields input {
+  border: none;
+  outline:none;
+  background: none;
+  font-size: 18px;
+    font-weight: bold;
+  color: #ffffff;
+  padding:20px 10px 20px 5px;
+}
+.username, .password {
+  margin-bottom: 30px;
+  border-radius: 25px;
+  box-shadow: inset 8px 8px 8px #cbced1,
+              inset -8px -8px 8px #fffbfb;
+}
+
+.fields svg {
+  height: 22px;
+  margin:0 10px 3px 25px;
+}
+
+
+.signin-button {
+  outline: none;
+  border:none;
+  cursor: pointer;
+  width:100px;
+   text-align: center;
+   float: right;
+  height: 60px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color:#fff;
+  position: relative;
+    right: 450px;
+
+  background: #41b4ff;
+  box-shadow: 3px 3px 8px #b1b1b1,
+              -3px -3px 8px #ffffff;
+  transition: 0.5s;
+}
+.signin-button:hover {
+  background:#2fdbb6;
+}
+.signin-button:active {
+  background:#1da88a;
+}
+.link {
+  padding-top: 20px;
+
+  position: relative;
+  right: -50px;
+  text-align: center;
+}
+.link a {
+  text-decoration: none;
+  color: #f0f9ff;
+  font-size: 20px;
+}
+

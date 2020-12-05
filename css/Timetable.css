@@ -1,0 +1,178 @@
+* {
+  font-family: sans-serif; /* Change your font family */
+}
+::-webkit-scrollbar{
+display: none;
+
+}
+
+.content-table {
+    top: 200px;
+    left: 580px;
+    position: relative;
+    z-index: 1;
+    padding-left: 0px;
+    margin: -55px 0 0;
+    margin-left: -185px;
+    margin-right: 200px;
+    margin-bottom: 0px;
+    font-size: 13px;
+    min-width: 400px;
+    border-radius: 30px 30px 30px 30px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.55);
+}
+
+.content-table thead tr {
+
+  height: 50px;
+  z-index: 1;
+  background: rgb(2,0,36);
+background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+  color: #ffffff;
+  border-collapse: collapse;
+  text-align: left;
+  font-weight: bold;
+}
+
+
+.content-table td {
+font-weight: bold;
+border-collapse: collapse;
+  z-index: 1;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 20px;
+}
+
+
+.content-table th{
+
+  border-collapse: collapse;
+    z-index: 1;
+  padding: 12px 15px;
+}
+
+.content-table tbody tr {
+  border-collapse: collapse;
+
+   z-index: 1;
+  border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr {
+  border-collapse: collapse;
+  z-index: -1;
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-collapse: collapse;
+   z-index: 1;
+   background-color: #f3f3f3;
+  border-bottom: 2px solid #009879;
+}
+
+.content-table tbody tr.active-row {
+  border-collapse: collapse;
+   z-index: 1;
+   background-color: #f3f3f3;
+}
+
+
+
+
+.homearrow {
+  z-index: -1;
+            background: #fff url('5bc6def3146c8.jpg') no-repeat center;
+            overflow: hidden;
+            top:0px;
+            left: 0px;
+          background-size: cover;
+            position: center;
+            -webkit-animation: fadein 2s; /* Safari and Chrome */
+            -moz-animation: fadein 2s; /* Firefox */
+            -ms-animation: fadein 2s; /* Internet Explorer */
+            -o-animation: fadein 2s; /* Opera */
+            animation: fadein 2s;
+
+            height: 935px;
+            width: 250vh;
+            position: absolute;
+        }
+
+        .homearrowtext {position: absolute; }
+
+
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Firefox */
+        @-moz-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Safari and Chrome */
+        @-webkit-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Internet Explorer */
+        @-ms-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }​
+
+        /* Opera */
+        @-o-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+     }
+
+     .try {
+
+       -webkit-animation: fadein 2s; /* Safari and Chrome */
+            -moz-animation: fadein 2s; /* Firefox */
+            -ms-animation: fadein 2s; /* Internet Explorer */
+            -o-animation: fadein 2s; /* Opera */
+            animation: fadein 2s;
+          }
+        .homearrowtext {position: absolute; }
+
+
+        @keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Firefox */
+        @-moz-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Safari and Chrome */
+        @-webkit-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }
+
+        /* Internet Explorer */
+        @-ms-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+        }​
+
+        /* Opera */
+        @-o-keyframes fadein {
+            from { opacity: 0; }
+            to   { opacity: 1; }
+     }
+
+
+
