@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    require 'conn.php';
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -18,6 +23,16 @@
   <a href="Profile.php">Profile</a>
    <a href="Notes.php">Notes</a>
 
+   <?php
+        if(isset($_SESSION["login"]) && $_SESSION["login"] == "yes"){
+            echo "<a href='Logout.php'>Logout</a>";
+        }else{
+            echo "<a href='/'>Login</a>";
+        }
+
+    ?>
+   
+
     <div class="animation start-home"></div>
 
     <h1><span class="">News</span></h1>
@@ -28,10 +43,29 @@
     <div class="b2 box"></div>
     <div class="profile">
         <img src="https://www.sololearn.com/avatars/8e660e19-30ad-43b1-a736-ffcec4e9476b.jpg">
-        <p class="Anonymous">Student Id</p>
+        <p class="Anonymous">Student Id:
+        <?php
+            echo $_SESSION["id_user"];
+        ?>
+        
+        
+        </p>
     </div>
     <div class="skills">
-        <p class="skill">Nume Prenume</p>
+        <p class="skill">
+            <?php
+                $SQL_QUERRY = "SELECT `Name` FROM `user` where `User_ID`=".$_SESSION["id_user"];
+
+                $result = $conn->query($SQL_QUERRY);
+
+                if($result->num_rows > 0){
+                    $row = $result->fetch_assoc();
+                    echo $row["Name"];
+                    
+                }
+            ?>
+        
+        </p>
         <ul>
             <li>Prezenta</li>
             <li>Laboratoare</li>
