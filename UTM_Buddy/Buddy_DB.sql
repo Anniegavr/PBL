@@ -12,8 +12,9 @@ CREATE TABLE UsersTable
 (
     UserId INT AUTO_INCREMENT PRIMARY KEY unique,
     UserEmail VARCHAR(30) NOT NULL unique,
-    UserPassword VARCHAR(30) NOT NULL,
-	UserName VARCHAR(50) not null,
+    UserPassword VARCHAR(30),
+    UserName VARCHAR(50) not null,
+    RegControl 	TINYINT(1) not null default 0,
     UserGroupId int not null,
     foreign key (UserGroupId) references GroupTable (GroupId),
     UserPhoto VARCHAR(50) unique	#link to the photo in storage
