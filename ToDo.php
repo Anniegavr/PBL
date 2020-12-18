@@ -11,10 +11,16 @@
     <link href="css/Profile.css" rel="stylesheet">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="todostyles.css">
     
     
 </head>
 <body>
+  <div id="app"></div>
+  <span class="todotext">To Do</span>
+  <script src="todoscripts.js"></script>
 
 <nav>
 <a  href="profile.php">Profile</a>
@@ -34,7 +40,7 @@
     
 
     <div class="animation start-todo"></div>
-    <h1><span class="">To Do</span></h1>
+    <h1><span class="todo">To Do</span></h1>
 </nav>
 
 <div class="items">
@@ -44,24 +50,6 @@
 </div>
 </body>
 <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-<script>
-$(function() {
-    $("#add").on("click", function() {
-        var val = $("input").val();
-        if(val !== '') {
-            var elem = $("<li></li>").text(val);
-            $(elem).append("<button class='rem'>remove</button>");
-            $("#mylist").append(elem);
-            $("input").val("");
-            $(".rem").on("click", function() {
-                $(this).parent().remove();
-                $("input").focus();
-            });
-            $("input").focus();
-        }
-    });
-});
-</script>
 <style>
 .items{
     margin-top: 50px;
