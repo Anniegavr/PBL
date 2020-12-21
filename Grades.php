@@ -1,3 +1,8 @@
+<?php
+    session_start();
+    require 'conn.php';
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,18 +23,22 @@
 
 <table width=40% >
     <nav>
-    <a class ="active" href="index.php">Home</a>
+<a href="profile.php">Profile</a>
   <a href="Timetable.php">Timetable</a>
   <a href="News.php">News</a>
 
-  <a href="Calendar.php" >Calendar</a>
+  <a href="Calendar.php">Calendar</a>
+   <a class="active" href="ToDo.php">Notes</a>
+        <a class="active" href="Flashcards.php">Flashcards</a>
 
-  <a href="Profile.php">Profile</a>
-   <a href="Notes.php">Notes</a>
+   <?php
+        if(isset($_SESSION["login"]) && $_SESSION["login"] == "yes"){
+            echo "<a href='Logout.php'>Logout</a>";
+        }else{
+            echo "<a href='/'>Login</a>";
+        }
 
-        <div class="animation start-home"></div>
-
-    </nav>
+    ?>
 
 </table>
 
