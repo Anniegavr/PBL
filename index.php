@@ -1,43 +1,5 @@
 <!DOCTYPE html>
-<?php
-    // session_start();
-    // $_SESSION['authorized'] = false;
-    
-    // #example for user & pass
-    // $username = 'Nur';
-    // $password = 'Ali';
-    
-    // # if user clicks logout link then remove session and refresh page
-    // if(isset($_GET['logout'])){
-    //    session_unset();
-    //    header('Location:' . $_SERVER["SCRIPT_NAME"]);
-    // }
 
-    // #show an error if user enters wrong username and password
-    // if(isset($_GET['error'])){
-    //    echo '<ul><li>Wrong username - password combination. Try again.</li></ul>';
-    // }
-    
-    // #check if user is not logged in yet
-    // if($_SESSION['authorized'] == false){
-    
-    //     #check if user submitted form
-    //     if(isset($_POST['submit'])){
-        
-    //         #check if user entered right username and password
-    //         if($_POST['username'] == $username && $_POST['password'] == $password){
-                
-    //             #finally set a session to determine if user signed in or not then refresh page
-    //             $_SESSION['authorized'] = true;
-    //             header('Location:' . $_SERVER["SCRIPT_NAME"]);
-    //         } else {
-    //             header('Location:' . $_SERVER["SCRIPT_NAME"] . '?error');
-
-    //         }
-    //     } 
-        
-        //#we are still in user is not logged in scope and user did not posted form yet. So lets show user a login form
-?>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
