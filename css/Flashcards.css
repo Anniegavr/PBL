@@ -1,0 +1,75 @@
+html {
+    background: #333;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #333;
+    font-weight: 400;
+    max-width: 100%;
+}
+
+#controls {
+    position: relative;
+}
+
+#new {
+    color: #fff;
+    background-color: #2d7;
+    font-weight: 500;
+    font-size: 4vh;
+    margin: 1vh auto;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    transition: all 250ms linear;
+    letter-spacing: 2px;
+    box-shadow: 1px 1px 1px #294;
+}
+
+#controls > input, #controls > input:focus {
+    outline: 0;
+    border: 0;
+    border-bottom: 1px solid #bbb;
+    margin: 1vh auto;
+    width: 100%;
+    font-size: 5vh;
+}
+
+.close {
+    font-size: 5vh;
+    color: #d55;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    transition: all 250ms linear;
+}
+
+.card, .box {
+    display: inline-block;
+    position: relative;
+    margin: 2vh auto 0 auto;
+    border: 0;
+    padding: 1vh 5vw;
+    width: 84vw;
+    min-height: 7vh;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px #222;
+}
+
+.answer {
+    width: 100%;
+    background-color: #333;
+    transition: all 250ms linear;
+}
+
+.answer:hover {
+    background-color: #fff;
+}
+
+h1 {
+    overflow: scroll;
+    font-size: 6vh;
+}
+
+p {
+    text-align: left;
+    font-size: 4vh;
+}
