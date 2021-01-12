@@ -52,3 +52,18 @@ create table AcademicPerformance
     total decimal(5,3)
 );
 
+CREATE TABLE `Flashcards` 
+( `FlashcardId` TINYINT(11) NOT NULL AUTO_INCREMENT , 
+ `Topic` VARCHAR(50) NOT NULL , 
+ `Question` VARCHAR(300) NOT NULL , 
+ `Answer` VARCHAR(1000) NOT NULL , 
+ 'User_ID' SMALLINT(11) NOT NULL,
+ PRIMARY KEY ('FlashcardId')) 
+	      ENGINE = InnoDB;
+	 
+CREATE TABLE `Notes` 
+( `Note_ID` SMALLINT(11) NOT NULL AUTO_INCREMENT , 
+`User_ID` SMALLINT(11) NOT NULL , 
+`Title` VARCHAR(60) NOT NULL , 
+`Text` TEXT NOT NULL , 
+PRIMARY KEY (`Note_ID`)) ENGINE = InnoDB;	 
