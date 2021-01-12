@@ -16,12 +16,12 @@
     </head>
     <body class="try">
     <nav>
-<a href="profile.php">Profile</a>
-  <a class ="active" href="Timetable.php">Timetable</a>
+<a href="Profile.php">Profile</a>
+  <a  href="Timetable.php">Timetable</a>
   <a href="News.php">News</a>
   <a href="Calendar.php" >Calendar</a>
-   <a href="Flashcards.php">Flashcards</a>
-   <a href="ToDo.php">To Do</a>
+   <a href="Notes.php">Notes</a>
+   <a class ="active" href="Flashcards.php">Flashcards</a>
 
    <?php
         if(isset($_SESSION["login"]) && $_SESSION["login"] == "yes"){
