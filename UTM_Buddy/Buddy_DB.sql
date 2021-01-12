@@ -17,6 +17,7 @@ CREATE TABLE UsersTable
     UserGroupId int not null,
     foreign key (UserGroupId) references GroupTable (GroupId),
     UserPhoto VARCHAR(50) unique	#link to the photo in storage
+    RegControl TINYINT(1) default 0 not null
 );
 
 create table TeacherTable
@@ -43,7 +44,7 @@ create table Timetable
 
 create table AcademicPerformance
 (
-	UserId int primary key not null,
+	UserId int not null,
     ObjectName varchar(30),
     Midterm1 TINYINT UNSIGNED,
     Midterm2 TINYINT UNSIGNED,
