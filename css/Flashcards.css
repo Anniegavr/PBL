@@ -1,10 +1,5 @@
-html {
-    background: #333;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: #333;
-    font-weight: 400;
-    max-width: 100%;
+html{
+    overflow:scroll;
 }
 
 #controls {
@@ -12,8 +7,9 @@ html {
 }
 
 #new {
-    color: #fff;
+    color: rgb(241, 235, 235);
     background-color: #2d7;
+    cursor: pointer;
     font-weight: 500;
     font-size: 4vh;
     margin: 1vh auto;
@@ -34,29 +30,39 @@ html {
 }
 
 .close {
+    cursor: pointer;
     font-size: 5vh;
-    color: #d55;
-    position: absolute;
+    color: rgb(219, 40, 40);
+    position: initial;
     top: 2%;
     left: 2%;
     transition: all 250ms linear;
 }
 
+
 .card, .box {
+    overflow: scroll;
     display: inline-block;
     position: relative;
-    margin: 2vh auto 0 auto;
+    margin: 4vh auto 0 15px;
     border: 0;
     padding: 1vh 5vw;
-    width: 84vw;
-    min-height: 7vh;
+    width: fit-content;
+    min-height: 0vh;
     background-color: #fff;
     box-shadow: 1px 1px 1px #222;
 }
 
+.question{
+    color: rgb(9, 67, 155);;
+    background-color: rgb(249, 250, 253);
+    transition: all 250ms linear;
+}
+
 .answer {
-    width: 100%;
-    background-color: #333;
+    width: auto;
+    color: rgb(9, 67, 155);
+    background-color: rgb(9, 67, 155);
     transition: all 250ms linear;
 }
 
@@ -70,6 +76,12 @@ h1 {
 }
 
 p {
+    position: initial;
     text-align: left;
     font-size: 4vh;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
