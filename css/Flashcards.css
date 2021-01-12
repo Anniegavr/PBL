@@ -12,8 +12,11 @@ html{
     cursor: pointer;
     font-weight: 500;
     font-size: 4vh;
-    margin: 1vh auto;
+    margin: 1vh 13px;
+    padding-left: inherit;
+    padding-right: inherit;
     padding-top: 2vh;
+    position: absolute;
     padding-bottom: 2vh;
     transition: all 250ms linear;
     letter-spacing: 2px;
