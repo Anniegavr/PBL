@@ -1,0 +1,88 @@
+/* Google fonts */ 
+@import url('https://fonts.googleapis.com/css?family=Jomolhari|Lora|Open+Sans&display=swap');
+/* reset and global */
+*, *::before, *::after {
+ 
+  /*box-sizing: border-box;*/
+  
+  
+}
+
+ul {
+  list-style: none;
+}
+/* centering the box and global styles */
+body{
+  overflow-y: scroll;
+  justify-content: center;
+  align-items: center;
+  font: 16px 'Open Sans', sans-serif;
+}
+/* the box */
+div.box {
+  opacity: 0.9;
+  block-size: auto;
+  background: rgb(205, 209, 209);
+  border: 1px solid #10a0b6;
+  border-radius: 5px;
+  padding: 20px 20px 30px 20px;
+  position: center;
+  width: 320px;
+  margin-left: 650px;
+}
+/* the outlined small box*/
+.box::before {
+  background: #10a0b6;
+  width: 43px;
+  height: 38px;
+  content: 'M';
+  position: absolute;
+  left: -20px;
+  color: #fff;
+  font: 22px 'Lora', serif;
+  border-radius: 0 19px 19px 0;
+  text-align: center;
+  line-height: 38px;
+}
+
+
+/* the text */
+.text-holder {
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 10px;
+  text-align: left;
+}
+/* rows and links */
+.links {
+  padding: 15px 0 0;
+}
+.rows {
+  display: contents;
+  justify-content: space-between;
+  padding: 0 0 10px;
+}
+.rows h3 {
+    display: flex;
+  font: 16px verdana, sans-serif;
+  font-weight: 500;
+  color:rgb(32, 77, 143);
+}
+.rows h1 {
+  display: flex;
+font: 19px verdana, sans-serif;
+font-weight: bold;
+color:#1074b6;
+text-shadow: lightcyan;
+}
+.rows a {
+  margin-right: 3px;
+  color: #10a0b6;
+}
+.rows a:hover {
+  text-decoration: underline;
+}
+
+.rows a::after {
+  content: '>>';
+  padding: 0 0 3px;
+}
