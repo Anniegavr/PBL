@@ -1,0 +1,22 @@
+.todo {
+	position: relative;
+	
+}
+
+#list	 {
+	position: relative;
+	left: 0px;
+	color:red;
+	background-color:#F2E2BA;
+	width: 200px;
+	word-wrap: break-word;
+}
+
+.items{
+	position: relative;
+	left:200px;
+}
+
+#mylist{
+	width: 200px;
+}

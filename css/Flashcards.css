@@ -1,5 +1,6 @@
 html{
-    overflow:scroll;
+    overflow: scroll;
+    scroll-behavior: smooth;
 }
 
 #controls {
@@ -7,8 +8,9 @@ html{
 }
 
 #new {
-    color: rgb(241, 235, 235);
+    color: #ecf0f1;
     background-color: #2d7;
+    border-radius: 30px;
     cursor: pointer;
     font-weight: 500;
     font-size: 4vh;
@@ -20,7 +22,8 @@ html{
     padding-bottom: 2vh;
     transition: all 250ms linear;
     letter-spacing: 2px;
-    box-shadow: 1px 1px 1px #294;
+    font-weight: 550;
+    box-shadow: -4px 3px 0px 2px #295;
 }
 
 #controls > input, #controls > input:focus {
@@ -44,12 +47,13 @@ html{
 
 
 .card, .box {
-    overflow: scroll;
+    margin-left: 30px;
+    border-radius: 20px;
     display: inline-block;
     position: relative;
     margin: 4vh auto 0 15px;
     border: 0;
-    padding: 1vh 5vw;
+    padding: 10px 30px;
     width: fit-content;
     min-height: 0vh;
     background-color: #fff;
@@ -74,8 +78,8 @@ html{
 }
 
 h1 {
-    overflow: scroll;
     font-size: 6vh;
+    color: rgb(24, 117, 255);
 }
 
 p {

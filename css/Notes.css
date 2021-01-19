@@ -29,6 +29,8 @@ table{
     top: 150px;
 }
 
+
+
 .top {
     background: linear-gradient(180deg, rgb(13, 4, 133) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
 }
@@ -60,9 +62,6 @@ table{
 .butt:hover {
   background-color:rgba(240,240,240,0.6);
 }
-
-
-
 
 #mydiv {
   position: absolute;
@@ -126,17 +125,7 @@ table{
             to   { opacity: 1; }
         }
 
-        /* Internet Explorer */
-        @-ms-keyframes fadein {
-            from { opacity: 0; }
-            to   { opacity: 1; }
-        }​
-
-        /* Opera */
-        @-o-keyframes fadein {
-            from { opacity: 0; }
-            to   { opacity: 1; }
-     }
+     
 
      .try {
 
@@ -165,17 +154,3 @@ table{
             from { opacity: 0; }
             to   { opacity: 1; }
         }
-
-        /* Internet Explorer */
-        @-ms-keyframes fadein {
-            from { opacity: 0; }
-            to   { opacity: 1; }
-        }​
-
-        /* Opera */
-        @-o-keyframes fadein {
-            from { opacity: 0; }
-            to   { opacity: 1; }
-     }
-
-
