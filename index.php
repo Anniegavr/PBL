@@ -1,10 +1,12 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
+<title>Login</title>
     <meta charset="utf-8" />
     
-    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" href="css/Profiles.css">
+    <link href="css/menus.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
     <meta charset="utf-8">
  
     <meta name="description" content="">
@@ -14,15 +16,30 @@
 
 <body >
 
-<div class="wrapper">
-        <div class="homearrow"></div>
-        <p class="homearrowtext"></p>
-    </div>
+<nav>
+<a href="Profile.php">Profile</a>
+  <a href="Timetable.php">Timetable</a>
+  <a href="News.php">News</a>
+  <a href="Calendar.php" >Calendar</a>
+   <a href="../Daniel/To_Do.php">Notes</a>
+   <a href="Flashcards.php">Flashcards</a>
+   <?php
+        if(isset($_SESSION["login"]) && $_SESSION["login"] == "yes"){
+            echo "<a href='Logout.php'>Logout</a>";
+        }else{
+            echo "<a href='/'>Login</a>";
+        }
+
+    ?>
+    
+    <div class="animation start-login"></div>
+    
+</nav>
 
 
 <div class="login-div"></div>
 
-<div class="login-div">
+<div class="log-elements">
   <div  class="logo"></div>
   <div class="title">UTM Buddy</div>
   <div class="sub-title"></div>

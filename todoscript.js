@@ -1,51 +1,3 @@
-<?php
-    session_start();
-    require 'conn.php';
-?>
-<!DOCTYPE html>
-<html>
-<head>
-    <title>To Do</title>
-    <link href="css/menus.css" rel="stylesheet">
-    <link href="css/Profiles.css" rel="stylesheet">
-     <link href="css/todos.css" rel="stylesheet">
-     <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
-    
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="css/todostyles.css">
-</head>
-<body>
-
-  <div id="app"></div>
-        <nav>
-<a class="active" href="Profile.php">Profile</a>
-  <a href="Timetable.php">Timetable</a>
-  <a href="News.php">News</a>
-  <a href="Calendar.php" >Calendar</a>
-   <a href="ToDo.php">Notes</a>
-   <a href="Flashcards.php">Flashcards</a>
-
-   <?php
-        if(isset($_SESSION["login"]) && $_SESSION["login"] == "yes"){
-            echo "<a href='Logout.php'>Logout</a>";
-        }else{
-            echo "<a href='/'>Login</a>";
-        }
-
-    ?>
-
-    <div class="animation start-todo"></div>
-</nav>
-<button class="note-add-btn" type="button" aria-label="Add"><i id="addid" class="fa fa-plus"></i><span id="addid">+</span></button>
-<div><div class="note note-yellow" data-color="yellow"><div class="note-header"><input class="note-title" type="text" placeholder="Untitled Note"></div><div class="note-body"><textarea></textarea></div><div class="note-footer"><button class="note-color-btn note-red" type="button" title="red" aria-label="red" data-color="red"></button><button class="note-color-btn note-orange" type="button" title="orange" aria-label="orange" data-color="orange"></button><button class="note-color-btn note-yellow" type="button" title="yellow" aria-label="yellow" data-color="yellow"></button><button class="note-color-btn note-green" type="button" title="green" aria-label="green" data-color="green"></button><button class="note-color-btn note-blue" type="button" title="blue" aria-label="blue" data-color="blue"></button><button class="note-color-btn note-purple" type="button" title="purple" aria-label="purple" data-color="purple"></button><button class="note-delete-btn" type="button" aria-label="Delete"><i class="fa fa-trash"></i></button></div></div></div>
-<div><div class="note note-red" data-color="yellow"><div class="note-header"><input class="note-title" type="text" placeholder="Untitled Note"></div><div class="note-body"><textarea></textarea></div><div class="note-footer"><button class="note-color-btn note-red" type="button" title="red" aria-label="red" data-color="red"></button><button class="note-color-btn note-orange" type="button" title="orange" aria-label="orange" data-color="orange"></button><button class="note-color-btn note-yellow" type="button" title="yellow" aria-label="yellow" data-color="yellow"></button><button class="note-color-btn note-green" type="button" title="green" aria-label="green" data-color="green"></button><button class="note-color-btn note-blue" type="button" title="blue" aria-label="blue" data-color="blue"></button><button class="note-color-btn note-purple" type="button" title="purple" aria-label="purple" data-color="purple"></button><button class="note-delete-btn" type="button" aria-label="Delete"><i class="fa fa-trash"></i></button></div></div></div>
-
-</body>
-
-<script>
 'use strict';
 
 (function () {
@@ -170,6 +122,11 @@
             return el;
         }
     }
+    function onPageLoad(){
+        $("#loaded_cards").load("Flash_Note.php",{
+            action: "get"
+        });
+    }
 
     class NoteDeleteButton {
         handleClick(event) {
@@ -254,20 +211,3 @@ hild((new NoteBody()).render());
 
     new App();
 }());
-
-</script>
-
-<style>
-.items{
-    margin-top: 50px;
-    margin-left: 500px;
-}
-.rem {
-    margin-left: 5px;
-    background-color: white;
-    color: red;
-    border: 2px;
-    cursor: pointer;
-}
-</style>
-</html>

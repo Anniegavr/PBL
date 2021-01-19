@@ -4,7 +4,7 @@
     $pass = $_POST["pass"];
     require 'conn.php';
 
-    $SQL_QUERRY = "select User_ID from user where Email = '$email' and Password = '$pass'";
+    $SQL_QUERRY = "select UserId from userstable where UserEmail = '$email' and UserPassword = '$pass'";
 
     $result = $conn->query($SQL_QUERRY);
 
@@ -12,7 +12,7 @@
 
         $_SESSION["login"] = "yes";
         $row = $result->fetch_assoc();
-        $_SESSION["id_user"] = $row["User_ID"];
+        $_SESSION["id_user"] = $row["UserId"];
         
     }
 
