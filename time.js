@@ -17,4 +17,5 @@ const months = [
 document.getElementById("month").innerHTML = months[date.getMonth()];
 document.getElementById("day")
 
-
+//eyyyyyyyyyyyyyyyyyyyyyyyy
+//joisduiskhdisydikujsan
